@@ -55,7 +55,7 @@ describe('coffeTech busca sem usuario logado', () => {
         cy.get('#usr_email > label').should('contain.text','Email inválido')
     
     })
-    it('caso de teste: tentar criar usuario com senhas de onfirmação diferente da senha', ()=>{
+    it('caso de teste: tentar criar usuario com senhas de confirmação diferente da senha', ()=>{
         cy.get('.nav-link > :nth-child(1)').click()
         cy.get('.my-2 > .btn').click()
         cy.get('#id_password').type('123456')
@@ -64,18 +64,13 @@ describe('coffeTech busca sem usuario logado', () => {
     
     })
     it('caso de teste: fazer login com senha errada', ()=>{
-        cy.get('.nav-link > :nth-child(1)').click()
-        cy.get('#idEmailLogin').type('rodrigoaugusto')
-        cy.get('#idSenhaLogin').type('11111111')
-        cy.get('.d-grid > .btn').click()
+        cy.login('rodrigoaugusto','11111111')
         cy.get('.alert').should('contain.text','Username or password incorect')
 
     })
-    it('caso de teste: fazer login com usuario inexisteste errada', ()=>{
-        cy.get('.nav-link > :nth-child(1)').click()
-        cy.get('#idEmailLogin').type('rodrigoaugusto45784test')
-        cy.get('#idSenhaLogin').type('123456')
-        cy.get('.d-grid > .btn').click()
+    it('caso de teste: fazer login com usuario inexisteste', ()=>{
+        var randomico = cy.getRandom(10000)
+        cy.login('test'+randomico,'123456')
         cy.get('.alert').should('contain.text','Username or password incorect')
 
     })
@@ -93,11 +88,7 @@ describe('coffeTech busca sem usuario logado', () => {
 
     })
     it('caso de teste: fazer login', ()=>{
-        cy.get('.nav-link > :nth-child(1)').click()
-        cy.get('#idEmailLogin').type('rodrigoaugusto')
-        cy.get('#idSenhaLogin').type('123456')
-        cy.get('.d-grid > .btn').click()
-
+        cy.login('rodrigoaugusto','123456')
         cy.get('.text-center').should('contain.text','Olá Rodrigoaugusto')
 
     })
