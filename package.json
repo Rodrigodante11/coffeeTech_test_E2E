@@ -1,0 +1,14 @@
+{
+  "name": "test_coffeetech_e2e",
+  "version": "1.0.0",
+  "description": "CoffeTech Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx cypress open"
+  },
+  "author": "Rodrigo Augusto",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^11.0.1"
+  }
+}
