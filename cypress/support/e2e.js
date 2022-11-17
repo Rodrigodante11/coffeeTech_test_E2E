@@ -17,6 +17,7 @@
 import './commands'
 import './gui_commands'
 import './generic_funtions'
+import 'cypress-mochawesome-reporter/register';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
