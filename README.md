@@ -1,4 +1,4 @@
-<h1 aligh="center"> testes End to End para o Sistema CoffeeTech django Web: <h2>
+<h2 aligh="center"> testes End to End para o Sistema CoffeeTech django Web: <h2>
 
 - baixar node JS is [Node JS](https://nodejs.org/pt-br).
 - instalar o framework de teste Cypress
