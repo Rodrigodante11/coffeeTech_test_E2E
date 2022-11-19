@@ -1,5 +1,11 @@
 <h2 aligh="center"> testes End to End para o Sistema CoffeeTech django Web: <h2>
 
+- Para baixar o projeto 
+
+```
+ git clone https://github.com/Rodrigodante11/coffeeTech_test_E2E.git
+```
+
 - baixar node JS is [Node JS](https://nodejs.org/pt-br).
 - instalar o framework de teste Cypress
 ```
