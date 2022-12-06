@@ -16,7 +16,7 @@ describe('coffeTech tela secador', () => {
         cy.get('#btn-delete').click()
 
     })
-    it('caso de teste: detalahar secador nome', ()=>{
+    it('caso de teste: detalhar secador nome', ()=>{
 
       cy.login('rodrigoaugusto','123456')
       cy.get('#cadastrar-secador-page-link').click()
@@ -30,7 +30,7 @@ describe('coffeTech tela secador', () => {
       cy.get('#btn-delete').click()
       
     })
-  it('caso de teste: detalahar secador modelo', ()=>{
+  it('caso de teste: detalhar secador modelo', ()=>{
     cy.login('rodrigoaugusto','123456')
       cy.get('#cadastrar-secador-page-link').click()
       cy.get('#input-nome-secador').type('Secador Teste 1')
@@ -44,7 +44,7 @@ describe('coffeTech tela secador', () => {
     
     
   })
-  it('caso de teste: detalahar localizacao', ()=>{
+  it('caso de teste: detalhar localizacao', ()=>{
     cy.login('rodrigoaugusto','123456')
       cy.get('#cadastrar-secador-page-link').click()
       cy.get('#input-nome-secador').type('Secador Teste 1')
@@ -57,7 +57,7 @@ describe('coffeTech tela secador', () => {
       cy.get('#btn-delete').click()
     
   })
-  it('caso de teste: detalahar criado por', ()=>{
+  it('caso de teste: detalhar criado por', ()=>{
     cy.login('rodrigoaugusto','123456')
       cy.get('#cadastrar-secador-page-link').click()
       cy.get('#input-nome-secador').type('Secador Teste 1')

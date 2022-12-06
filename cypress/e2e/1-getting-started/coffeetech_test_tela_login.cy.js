@@ -45,7 +45,7 @@ describe('coffeTech Tela login', () => {
     
     })
 
-    it('caso de teste: tentar criar usuario com email repetido, regex inpede', ()=>{
+    it('caso de teste: tentar criar usuario com email repetido, regex impede', ()=>{
         cy.get('#link-login').click()
         cy.get('.my-2 > .btn').click()
         cy.get('#id_first_name').type('Rodrigo')
